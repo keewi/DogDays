@@ -1,0 +1,84 @@
+/* Color Scheme:
+** Headers + Text: 2d2d2e - dark gray
+** Sub-headers: 656565 - gray
+** Background: dbdbd9 - light gray
+** Accent: dfadec - lilac
+*/
+
+body {
+    font-family: 'Lato', 'Segoe UI', Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 75%;
+}
+
+#time {
+	position: absolute;
+	font-size: 160px;
+	text-align: center;
+	top: 60px;
+	left: 50%;
+	margin-left: -309.3px;
+	color: #2d2d2e;
+}
+
+#date {
+	position: absolute;
+	margin: 0;
+	font-size: 20px;
+	text-align: center;
+	color: #656565;
+	top: 250px;
+	left: 50%;
+	margin-left: -92.367;
+}
+.search {
+	position: absolute;
+	text-align: center;
+	margin: 40px 0;
+	top: 260px;
+	left: 50%;
+	margin-left: -250.5px;
+}
+.search-inner {
+	display: inline-block;
+}
+.search-box {
+	padding: 6px;
+	border: 1px solid #dfadec;
+	background: none;
+	border-radius: 2px;
+}
+
+.search-box:focus {
+	outline: #dfadec auto 5px;
+}
+
+.button {
+	border: 1px solid #dfadec;
+	border-radius: 2px;
+	background: none;
+	color: #dfadec;
+	padding: 6px;
+}
+
+.button:hover {
+	cursor: hand;
+	background: #dfadec;
+	color: white;
+	border: 1px solid #dfadec;
+}
+#dog-name {
+	font-size: 70px;
+	color: #2d2d2e;
+	position: absolute;
+	bottom: 100px;
+	left: 100px;
+}
+
+.dog-pic {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 85%;
+	z-index: -1;
+}

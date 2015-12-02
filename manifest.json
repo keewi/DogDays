@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dog of the Day New Tab",
+  "description": "This extension will help you learn a new dog breed each day.",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png"
+  },
+  
+  "permissions": [
+   "activeTab",
+   "management"
+   ],
+
+  "chrome_url_overrides": {
+    "newtab" : "dogdays.html"
+  }
+}
