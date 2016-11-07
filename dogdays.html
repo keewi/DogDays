@@ -1,22 +1,28 @@
 <html>
-	<head>
-		<script src="dogdays.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="dogdays.css">
-	</head>
-  <body>
-  	<div id="time"></div>
-  	<div id="date"></div>
-		<div class="search">
-			<form method="get" action="http://www.google.com">
+<head>
+	<script src="jquery-3.1.1.js"></script>
+	<script src="dogdays.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="dogdays.css">
+</head>
+<body>
+	<div id="time"></div>
+	<div id="date"></div>
+	<div class="search">
+		<form method="get" action="http://www.google.com">
 			<table class="search-inner" cellpadding="0">
 				<tr><td>
-					<input class="search-box" type="text"   name="q" size="50"
-					 maxlength="255" value=""></textarea>
-					<input class="button" type="submit" value="Google Search" /></td></tr>
+					<input class="search-box" type="text" name="q" size="83"
+					maxlength="255" value=""></textarea>
+					<input class="button" type="submit" value="Google Search" /></td>
+				</tr>
 			</table>
-		</div>
-		<img class="dog-pic" id="dog-pic" src="cocker-spaniel.png" alt="Cocker Spaniel"/>
-  	<div id="dog-name">Cocker Spaniel</div>
-  </body>
+		</form>
+	</div>
+	<img class="dog-pic" id="dog-pic" src="cocker-spaniel.png" alt="Cocker Spaniel"/>
+	<div id="dog-name">
+		<h2 class="name">Cocker Spaniel</h2>
+		<p id="name-btn">Learn more...</p>
+	</div>
+</body>
 </html>

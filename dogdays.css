@@ -15,7 +15,7 @@ body {
 	position: absolute;
 	font-size: 160px;
 	text-align: center;
-	top: 60px;
+	top: 100px;
 	left: 50%;
 	margin-left: -309.3px;
 	color: #2d2d2e;
@@ -27,7 +27,7 @@ body {
 	font-size: 20px;
 	text-align: center;
 	color: #656565;
-	top: 250px;
+	top: 280px;
 	left: 50%;
 	margin-left: -92.367;
 }
@@ -35,44 +35,62 @@ body {
 	position: absolute;
 	text-align: center;
 	margin: 40px 0;
-	top: 260px;
-	left: 50%;
+	top: 300px;
+	left: 45%;
 	margin-left: -250.5px;
 }
 .search-inner {
 	display: inline-block;
 }
 .search-box {
-	padding: 6px;
+	padding: 12px;
 	border: 1px solid #dfadec;
 	background: none;
 	border-radius: 2px;
 }
 
-.search-box:focus {
+.search-box:focus,
+.button:focus {
 	outline: #dfadec auto 5px;
 }
 
 .button {
 	border: 1px solid #dfadec;
 	border-radius: 2px;
-	background: none;
-	color: #dfadec;
-	padding: 6px;
+	background: #dfadec;
+	padding: 12px;
+	color: white;
 }
 
 .button:hover {
 	cursor: hand;
-	background: #dfadec;
-	color: white;
-	border: 1px solid #dfadec;
+	background: #e5bdef;
+	border: 1px solid #e5bdef;
+
 }
 #dog-name {
+	position: absolute;
+	top: 80%;
+	left: 100px;
+}
+#dog-name h2 {
 	font-size: 70px;
 	color: #2d2d2e;
-	position: absolute;
-	bottom: 100px;
-	left: 100px;
+	font-weight: normal;
+	margin: 0;
+}
+#dog-name p {
+	color: #dfadec;
+	font-size: 20px;
+	margin: 0;
+}
+#dog-name h2:hover {
+	color: #666666;
+	cursor: hand;
+}
+#dog-name p:hover {
+	color: #e5bdef;
+	cursor: hand;
 }
 
 .dog-pic {
