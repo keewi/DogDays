@@ -11,10 +11,12 @@
   
   "permissions": [
    "activeTab",
-   "management"
+   "management",
+   "http://en.wikipedia.org/*"
    ],
 
   "chrome_url_overrides": {
     "newtab" : "dogdays.html"
-  }
+  },
+
 }

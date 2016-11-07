@@ -8,7 +8,7 @@
 body {
     font-family: 'Lato', 'Segoe UI', Tahoma, sans-serif;
     font-weight: 300;
-    font-size: 75%;
+	font: 14px;
 }
 
 #time {
@@ -99,4 +99,17 @@ body {
 	bottom: 0;
 	height: 85%;
 	z-index: -1;
+}
+
+#article {
+	position: absolute;
+	display: none;
+	top: 25%;
+	width: 50%;
+	height: 60%;
+	overflow: scroll;
+	left: 100px;
+	outline: #dbdbd9 auto 5px;
+	padding: 20px;
+	background: white;
 }

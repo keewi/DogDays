@@ -37,17 +37,42 @@ function toggle_page() {
 		setTimeout(function() {
 			$("#name-btn").html("Learn more...");
 		}, 100);
+		$("#article").fadeOut(100);
 	} else {
 		$("#time").fadeOut(300);
 		$("#date").fadeOut(300);
 		$(".search").fadeOut(300);
-		$("#dog-name").animate({top: "50px"});
+		$("#dog-name").animate({top: "10%"});
 		setTimeout(function() {
 			$("#name-btn").html("Click to close");
 		}, 100);
+		setTimeout(function() {
+			get_dog_details("Belgian Malinois");
+		}, 300);
 	}
 	expanded = !expanded;
 };
+
+function get_dog_details(dog_name) {
+	var summary_file = dog_name
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", summary_file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var article = rawFile.responseText;
+                $("#article").html(article);
+
+            }
+        }
+    }
+    rawFile.send(null);
+	$("#article").fadeIn(500);
+	console.log(dog_name);
+}
 
 window.onload = function() {
 	document.getElementById("time").innerHTML = get_time();
